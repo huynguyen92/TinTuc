@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/item_normal_ads"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5.0dip"
+        android:layout_weight="1.0"
+        android:background="#ffffffff"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_ads_heading_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:ellipsize="end"
+            android:lineSpacingMultiplier="1.1"
+            android:maxLines="2"
+            android:minLines="2"
+            android:textColor="@color/title"
+            android:textSize="16.0sp" />
+
+        <RelativeLayout
+            android:id="@+id/ads_img"
+            android:layout_below="@+id/txt_ads_heading_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5.0dip">
+
+            <ImageView
+                android:id="@+id/img_ads"
+                android:layout_width="fill_parent"
+                android:layout_height="240.0dip"
+                android:scaleType="centerCrop"
+                android:src="@color/text_gray" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ads_img"
+            android:drawablePadding="5.0dip">
+
+            <TextView
+                android:id="@+id/txt_src_news"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingBottom="5.0dip"
+                android:paddingRight="5.0dip"
+                android:paddingTop="5.0dip"
+                android:textColor="@color/text_gray"
+                android:text="Được tài trợ"
+                android:textSize="10.0sp" />
+
+
+            <Button
+                android:id="@+id/btn_ads_action"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.03"
+                android:text="Install"
+                android:layout_marginRight="23dp"
+                android:layout_marginEnd="23dp"
+
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+</RelativeLayout>

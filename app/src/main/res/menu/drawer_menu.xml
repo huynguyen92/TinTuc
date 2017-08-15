@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:id="@+id/nav_group"
+        android:enabled="true">
+        <item
+            android:id="@+id/nav_recent"
+            android:icon="@drawable/ic_menu_recent"
+            android:enabled="true"
+            android:title="@string/menu_recent"
+            android:visible="true"
+            app:titleTextColor="@color/colorPrimary" />
+        <item
+            android:id="@+id/nav_favorite"
+            android:icon="@drawable/ic_menu_favorite"
+            android:enabled="true"
+            android:title="@string/menu_favorite"
+            android:visible="true"
+            app:titleTextColor="@color/colorPrimary" />
+
+
+    </group>
+
+    <group
+        android:id="@+id/nav_promote"
+        android:enabled="true">
+
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_menu_share"
+            android:title="@string/menu_share"
+            app:titleTextColor="@color/colorPrimary" />
+
+        <item
+            android:id="@+id/nav_more_app"
+            android:icon="@drawable/ic_menu_moreapp"
+            android:title="@string/menu_moreapp"
+            app:titleTextColor="@color/colorPrimary" />
+    </group>
+
+
+    <group>
+            <item
+                android:id="@+id/nav_setting"
+                android:title="@string/menu_setting"
+                android:icon="@drawable/ic_menu_setting"
+                app:titleTextColor="@color/colorPrimary" />
+
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_menu_about"
+                android:title="@string/menu_about"
+                app:titleTextColor="@color/colorPrimary" />
+
+            <item
+                android:id="@+id/nav_turnoff"
+                android:icon="@drawable/ic_menu_logout"
+                android:title="@string/menu_turn_off"
+                app:titleTextColor="@color/colorPrimary" />
+
+    </group>
+
+
+</menu>
